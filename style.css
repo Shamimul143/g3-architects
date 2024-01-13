@@ -42,8 +42,6 @@ nav {
     color: var(--Dark-01, #131313);
     text-align: center;
     font-size: 2.8rem;
-    font-weight: 600;
-
 }
 
 ul {
@@ -66,7 +64,7 @@ ul a {
 }
 
 .banner-content {
-    max-width: 880px;
+    max-width: 65%;
     text-align: center;
     margin: 50px auto;
     margin-bottom: 20px;
@@ -76,8 +74,6 @@ ul a {
     color: var(--Dark-01, #131313);
     text-align: center;
     font-size: 3rem;
-    font-weight: 600;
-
 }
 
 .banner img {
@@ -86,12 +82,12 @@ ul a {
 }
 
 main {
-    max-width: 880px;
-    margin: 70px auto;
+    max-width: 65%;
+    margin: 50px auto;
 }
 
-        /* -----------header start ---------------------*/
-        /* ------------teams start --------------------*/
+/* -----------header start ---------------------*/
+/* ------------teams start --------------------*/
 
 .container {
     display: flex;
@@ -141,7 +137,8 @@ main {
 .features-title h2 {
     color: var(--Dark-01, #131313);
     font-size: 1.8rem;
-
+    border-left: 4px solid #FF900E;
+    padding-left: 8px;
 
 }
 
@@ -172,7 +169,79 @@ main {
     color: #fff;
     position: relative;
     bottom: 35px;
-    right: 30px;  
+    right: 30px;
 }
 
 /* -----------------features end ------------------*/
+
+.facts-title {
+    color: var(--Dark-01, #131313);
+    font-size: 1.8rem;
+}
+
+.facts-icon {
+    display: flex;
+    justify-content: space-around;
+    margin: 50px 20px;
+
+}
+
+.facts-icon-description {
+    border-radius: 8px;
+    border: 1px solid #FF900E;
+    text-align: center;
+    padding: 15px;
+    margin-right: 30px;
+    width: 240px;
+}
+
+.fact-icon-number {
+    color: var(--Dark-02, #424242);
+    font-size: 2rem;
+}
+
+
+/* <!----------------- Sponsors start ---------------> */
+
+.sponsors-section {
+    text-align: center;
+}
+
+.sponsors-img {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.sponsors-img>img {
+    width: 95px;
+    margin: 50px;
+}
+
+.footer-section {
+    border-radius: 8px;
+    background: #FFF4E7;
+    width: 65%;
+    margin: 0 auto;
+    padding: 2px;
+    text-align: center;
+}
+
+@media screen and (max-width:576px) {
+
+    header{
+        padding: 0 10px;
+    }
+
+    nav, .container, .features-container, .facts-icon, .sponsors-img{
+        flex-direction: column;
+    }
+
+    /* .teams-img img{ */
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    /* .ten-year{ */
+        position: static;
+    }
+}
