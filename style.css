@@ -233,15 +233,21 @@ main {
         padding: 0 10px;
     }
 
-    nav, .container, .features-container, .facts-icon, .sponsors-img{
+    nav, .container, .features-container, .facts-icon, .sponsors-img, ul{
         flex-direction: column;
     }
-
-    /* .teams-img img{ */
-        margin-left: 10px;
-        margin-right: 10px;
+   
+    .teams-img img{
+        width: 180px;
     }
-    /* .ten-year{ */
+    .features-img>img{
+        width: 350px;
+        height: 550px;
+    }
+    .ten-year{
         position: static;
+    }
+    .facts-icon{
+        margin: 50px auto;
     }
 }
