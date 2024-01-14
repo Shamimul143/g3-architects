@@ -251,3 +251,26 @@ main {
         margin: 50px auto;
     }
 }
+
+@media screen  and (min-width:576px) and (max-width:960px){
+
+    .header{
+        padding: 0 50px;
+    }
+    nav, .container, .features-container, .facts-icon, .sponsors-img, ul{
+        flex-direction: column;
+    }
+
+    .facts-icon{
+        margin-left: 76px;
+    } 
+    .facts-icon-description{
+        margin-bottom: 20px;
+    }
+    .sponsors-img{
+        margin-left: 115px;
+    }
+    .sponsors-img img{
+        padding-top:10px ;
+    }
+}
